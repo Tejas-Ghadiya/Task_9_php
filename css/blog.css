@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background color */
+  color: #333; /* Default text color */
+}
+header {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around; /* Centers items evenly */
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* Adds padding for a bigger clickable area */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+  border-radius: 5px; /* Rounded corners for the links */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  text-decoration: underline;
+}
+
+/* Container Styles */
+.conten {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  padding: 20px; /* Padding around the content */
+}
+
+.leftcolumn {
+  flex: 1; /* Allow the left column to grow */
+  max-width: 800px; /* Set max width for the blog */
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff; /* White background for the card */
+  border: 1px solid #dee2e6; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px; /* Margin around the card */
+}
+
+/* Title Styles */
+h1 {
+  color: #007bff; /* Blue color for the title */
+  font-size: 2.5em; /* Large font size */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Image Styles */
+.card img {
+  border-radius: 5px; /* Rounded corners for images */
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Blog Content Styles */
+h4 {
+  font-size: 1.2em; /* Adjust size for blog text */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space below the blog content */
+}
+
+/* Author Image and Info Styles */
+.image {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Space above the image */
+}
+
+.image img {
+  border-radius: 50%; /* Circular shape for author image */
+  border: 2px solid #007bff; /* Blue border */
+  margin-right: 15px; /* Space between image and text */
+  width: 100px; /* Set fixed width */
+  height: 100px; /* Set fixed height */
+}
+
+p {
+  margin: 0; /* Remove default margin */
+  color: #666; /* Dark gray for author info */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .conten {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .leftcolumn {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .card {
+    margin: 10px; /* Reduce margin on mobile */
+  }
+}

@@ -1,0 +1,147 @@
+/* CSS for Blog Page */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around; /* Centers items evenly */
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* Adds padding for a bigger clickable area */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+  border-radius: 5px; /* Rounded corners for the links */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  text-decoration: underline;
+}
+
+/* Blogs Section Styles */
+.blogs {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blogs img {
+  border-radius: 5px;
+  max-width: 100%; /* Ensure images are responsive */
+}
+
+h2 {
+  color: #007bff;
+}
+
+/* Like and Comment Buttons */
+.like {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Space between buttons */
+}
+
+.add,
+.rimove,
+.comment {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+
+.add svg,
+.rimove svg,
+.comment svg {
+  fill: #007bff;
+  transition: fill 0.3s;
+}
+
+.add:hover svg,
+.rimove:hover svg {
+  fill: #0056b3; /* Darker shade on hover */
+}
+
+.add:hover,
+.rimove:hover,
+.comment:hover {
+  transform: scale(1.1); /* Slightly enlarge buttons on hover */
+}
+
+/* Pagination Styles */
+.pagination {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination .page-item .page-link {
+  color: #007bff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Modal Styles */
+.modal-content {
+  padding: 20px;
+}
+
+#writer-image {
+  margin-bottom: 15px;
+}
+
+.modal-header {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stacks nav items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Adds vertical spacing between items */
+  }
+
+  .blogs {
+    margin: 10px; /* Reduces margin for smaller screens */
+  }
+}
